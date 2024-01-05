@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="process">
+            <pre class="box code">
+                <code>
+<span>function</span> binary_search(A, target){
+    <span>let</span> lo = 1, hi = A.<span>length</span>;
+    <span>while</span> (lo <= hi){
+        <span>let</span> mid = lo + (hi - lo) / 2;
+        if (A[mid] == target){
+            <span>return</span> mid;
+        } <span>else if</span> (A[mid] < target) {
+            lo = mid + 1;
+        } <span>else</span> {
+            hi = mid - 1;
+        }
+    }
+}
+                </code>
+            </pre>
+           <div class="box search ">
+                <div class="lo">
+                    <label>Low:</label><span id="lo">?</span>
+                </div>
+                <div class="hi">
+                    <label>high:</label><span id="hi">?</span>
+                </div>
+                <div class="mid">
+                    <label>midpoint:</label><span id="mid">?</span> 
+                </div>
+           </div>
+        </div>
+        <div class="target">
+            <input type="text" name="" id="target" placeholder="Enter your target">
+            <button class="btn btn-find" id="btnFind">Find</button>
+            <div class="state">
+                <button class="btn btn-pause" id="btnPause"><img src="imgs/pause-white.png" alt="" srcset=""></button>
+                <button class="btn btn-resume hide" id="btnResume"><img src="imgs/play-white.png" alt="" srcset=""></button>
+            </div>
+        </div>
+        <div class="sequence">
+            <div class="indexes">
+                <label class="label">Indexes</label>
+                <ul class="list" id="listOfIndexes">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                </ul>
+            </div>
+            <div class="numbers">
+                <label class="label">Numbers</label>
+                <ul class="list" id="listOfNumbers">
+                    <li>0</li>
+                    <li>5</li>
+                    <li>13</li>
+                    <li>19</li>
+                    <li>22</li>
+                    <li>41</li>
+                    <li>55</li>
+                    <li>68</li>
+                    <li>72</li>
+                    <li>81</li>
+                    <li>98</li>
+                </ul>
+            </div>
+        </div>
+        <div class="place" id="place">
+            Index:
+            <span id="index">?</span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

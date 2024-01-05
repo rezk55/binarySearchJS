@@ -1,0 +1,106 @@
+
+@media (max-width:768px){
+    
+    .indexes .list li {
+        font-size: 1rem;
+    }
+
+    .list li {
+        width: 25px;
+        font-size: 1.1rem;
+    }
+
+    label {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+ 
+    .list {
+        gap: 7px;
+    }
+}
+
+@media (max-width:575px){
+
+    .process {
+        flex-direction: column;
+    }
+
+    .target .btn-find {
+        transform: translateX(-65%);
+        -webkit-transform: translateX(-65%);
+        -moz-transform: translateX(-65%);
+        -ms-transform: translateX(-65%);
+        -o-transform: translateX(-65%);
+    }
+
+    .target input {
+        font-size: 1rem;
+        transform: translateX(15%);
+        -webkit-transform: translateX(15%);
+        -moz-transform: translateX(15%);
+        -ms-transform: translateX(15%);
+        -o-transform: translateX(15%);
+    }
+
+    .target .state {
+        transform: translateX(-75%);
+        -webkit-transform: translateX(-75%);
+        -moz-transform: translateX(-75%);
+        -ms-transform: translateX(-75%);
+        -o-transform: translateX(-75%);
+}
+
+    .indexes .list li {
+        font-size: 0.8rem;
+    }
+
+    .list li {
+        width: 25px;
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+        margin-right: 5px;
+    }
+
+    
+    .list {
+        gap: 0px;
+    }
+}
+
+@media (max-width:300px){
+    
+    .state img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .target input {
+        padding: 10px 5px;
+    }
+
+    .btn {
+        padding: 7px 15px;
+    }
+
+    .indexes .list li {
+        font-size: 0.7rem;
+    }
+
+    .list li {
+        width: 20px;
+        font-size: 0.8rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+ 
+    .list {
+        gap: 0px;
+    }
+}
