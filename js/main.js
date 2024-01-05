@@ -17,6 +17,7 @@ arr = listOfNumbers.children;
 
 btnFind.addEventListener('click',()=>{
     listOfNumbers.children[preIndex].classList.remove('success');
+    document.getElementById('index').classList.remove('not-found');
     document.getElementById('index').innerHTML = '?';
     loEl.innerHTML = '?';
     hiEl.innerHTML = '?';
@@ -73,7 +74,7 @@ async function binary_search(A, target){
     }
 
     if(lo==hi||lo>hi){
-        document.getElementById('index').style.color = 'red';
+        document.getElementById('index').classList.add('not-found');
         document.getElementById('index').innerHTML = 'Not found';
     }
 

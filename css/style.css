@@ -84,7 +84,7 @@ body {
     -o-transform: translate(-110%);
 }
 
-.state {
+.target .state {
     transform: translate(-50%);
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -157,6 +157,10 @@ label {
 .wrong {
     background-color: red;
     color: #fff;
+}
+
+.not-found {
+    color: red;
 }
 
 .border {
